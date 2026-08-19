@@ -1,0 +1,4 @@
+SELECT MIN(abs(p2.x-p1.x))
+FROM Points p1
+JOIN Points p2
+ON p1.x != p2.x;
