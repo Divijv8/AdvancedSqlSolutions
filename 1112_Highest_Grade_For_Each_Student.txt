@@ -1,0 +1,6 @@
+SELECT student_id, course_id, grade
+FROM (
+  SELECT student_id, course_id, grade, DENSE_RANK() OVER (PARTITION BY student_id ORDER BY grade DESC, course_id) as rnk
+  FROM Enrollments
+) n
+WHERE rnk = 1 and student_id IS NOT NULL;
