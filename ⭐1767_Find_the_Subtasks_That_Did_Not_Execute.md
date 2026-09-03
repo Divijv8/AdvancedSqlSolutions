@@ -1,5 +1,4 @@
 ```sql
-Find the Subtasks That Did Not Execute
 WITH RECURSIVE newTable AS (
 
     SELECT 
