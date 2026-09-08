@@ -1,5 +1,6 @@
 **Gaps and Island Technique**
 
+```sql
 WITH Data AS (
     SELECT fail_date AS date, 'failed' AS state
     FROM Failed
@@ -30,3 +31,4 @@ SELECT
 FROM res_Data
 GROUP BY state, res_date
 ORDER BY start_date;
+```
