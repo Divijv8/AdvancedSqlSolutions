@@ -1,3 +1,5 @@
+**Gaps and Island Technique**
+
 WITH Data AS (
     SELECT fail_date AS date, 'failed' AS state
     FROM Failed
